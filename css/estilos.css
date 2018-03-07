@@ -1,0 +1,270 @@
+@font-face {
+	font-family: "Dancing Script";
+	src: url(../fuentes/DancingScript-Regular.ttf) format("truetype");
+}
+
+*{
+	font-family: "Dancing Script";
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #02010a;
+	font-family: Dancing Script;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+}
+
+header{
+	background-color: #5b7989;
+	color: white;
+	display: -webkit-flex;
+	display: flex;
+	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius:10px 10px 0px 0px;
+	-webkit-border-radius:10px 10px 0px 0px;
+}
+
+header h1{
+		text-shadow: 2px 2px #02010a;
+		text-align: center;
+	}
+	
+	a{
+		color: white;
+		margin: 10px 0;
+		padding: 10px;
+	}
+	
+a:link{
+text-decoration:none;
+color: #FFF;
+}
+
+
+img{
+	box-shadow: 2px 2px #02010a;
+}
+
+#principal{
+	background-color: #82c3a6;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#principal img{
+	width: 90%;
+	margin: 10px 0;
+}
+
+#secundaria img{
+	box-shadow: #82c3a6;
+	max-width: 100%;
+}
+
+spam a{
+	display: -webkit-flex;
+	display: flex;
+}
+
+footer{
+	background: #C6d5c5;
+	border-radius: 0 0 10px 10px;
+}
+
+#contenido{
+	animation: animationContenido 1s;
+}
+@-webkit-keyframes animationContenido{
+	0%{
+		margin-top: 150%;
+	}60%{
+		margin-top: -5%;
+	}100%{
+		margin-top: 0;
+	}
+}
+@-webkit-keyframes animantionShadow{
+	from{
+		box-shadow: 2px 2px #02010a;
+	}to{
+		box-shadow:  2px 2px #82c3a6;
+	}
+}
+.rotate{
+	transform: rotateZ(none);
+	transition: rotatez, 1s;
+}
+.rotate:hover{
+	transform: rotateZ(10deg);
+	animation: animantionShadow 1s;
+	animation-fill-mode: forwards;
+}
+.translate{
+	transform: translate(0, 0);
+	transition: traslate, 1s;
+}
+.translate:hover{
+	transform:  translate(20px, -5px);
+	animation: animantionShadow 1s;
+	animation-fill-mode: forwards;
+}
+spam{
+	display: -webkit-flex;
+	display: flex
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	align-items: center;
+}
+spam a{
+	margin: 10px;
+	justify-content: center;
+	align-items: center;
+}
+#galeria div div img{
+	width: 100%;
+}
+/* Desktop */
+@media screen and (min-width:900px){
+	#contenido{
+		max-width: 900px;
+	}
+	header{
+		justify-content: space-between;
+		padding: 10px;
+	}
+	div{
+		padding: 10px;
+	}
+	li{
+		margin: 0 10px;
+	}
+	footer{
+		display: -webkit-flex;
+		display:flex;
+		border-radius: 0 0 10px 10px
+	}
+	footer div{
+		flex-basis: 0;
+		flex-grow: 1;
+		padding: 20px;
+	}
+	#secundaria img{
+		box-shadow: #82c3a6;
+		max-width: 100%;
+	}
+	nav{
+		perspective-origin: right;
+		margin: auto 0;
+	}
+	.fotos{
+		flex-basis: 0;
+		flex-grow: 1;
+		margin: 0;
+	}
+	#galeria{
+		max-width: 900px;
+	}
+	#galeria{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		background-color: #d5c75f;
+	}
+	#galeria div{
+		    display: -webkit-flex;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			padding: 0;
+	}
+	#galeria div div{
+		margin: 20px;
+	}
+	spam{
+		justify-content: center;
+	}
+	#secundaria{
+		display: -webkit-flex;
+		display: flex;
+		justify-content: space-around;
+		background-color: #d5c75f;
+		border: solid 1px;
+	}
+}
+/* Moviles */
+ @media screen and (max-width:899px){
+	#contenido{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		align-items: center;
+	}
+	li{
+		margin: 10px;
+	}
+	#principal{
+		padding: 10px;
+	}
+	spam{
+		margin: 10px 10px 0 10px;
+	}
+	#secundaria{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		background-color: #d5c75f;
+		border: solid 1px;
+		padding-bottom: 10px;
+	}
+	header{
+		padding-top: 10px;
+	}
+	footer div{
+		margin: 10px;
+	}
+	footer{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	#galeria{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		background-color: #d5c75f;
+	}
+	#galeria div{
+		display: -webkit-flex;
+		display: flex
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	#galeria div div{
+		padding: 0px;
+		margin: 10px;
+	}
+}
+
+.blur{
+	-webkit-filter: blur(10px);
+}
+.gris{
+	-webkit-filter: grayscale(100%);
+}
+.sepia{
+	-webkit-filter: sepia(90%);
+}
